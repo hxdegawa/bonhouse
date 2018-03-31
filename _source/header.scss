@@ -1,0 +1,47 @@
+header{
+  position: relative;
+  height: 80px;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 3px 10px #cecece;
+
+  .header-contents{
+    display: block;
+    margin:  0 auto;
+    max-width: 960px;
+
+    .logo{
+      height: 80px;
+      object-fit: contain;
+      box-sizing: border-box;
+      padding: 10px 20px;
+      @media screen and (max-width: 960px){
+        display: none;
+      }
+    }
+
+    ul{
+      float: right;
+      margin: 0;
+      width: 30%;
+      height: 80px;
+      line-height: 80px;
+      display: flex;
+      justify-content: space-around;
+      
+      @media screen and (max-width: 960px){
+        width: 50%;
+      }
+      
+      li{
+        list-style: none;
+        
+        a{
+          text-decoration: none;
+          font-size: 1.1em;
+          color: #212121;
+        }
+      }
+    }
+  }
+}
